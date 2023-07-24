@@ -27,7 +27,8 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    
+            
+            
     @IBAction func btnAdd(_ sender: Any) {
         // Check if both title and URL text fields have valid input
                guard let title = textfieldTitle.text, !title.isEmpty,
@@ -50,9 +51,7 @@ class SecondViewController: UIViewController {
                    }
                }
     }
-            
-            
-            
+    
             private func downloadImage(from imageURL: URL, completion: @escaping (Data?) -> Void) {
                 DispatchQueue.global().async {
                     if let imageData = try? Data(contentsOf: imageURL) {
@@ -64,11 +63,10 @@ class SecondViewController: UIViewController {
             }
             
             
-            
-            @IBAction func btnCancel(_ sender: Any) {
-                // Dismiss the view controller without adding a new image
-                dismiss(animated: true, completion: nil)
-            }
-            
+    @IBAction func btnCancel(_ sender: Any) {// Dismiss the view controller without adding a new image
+        dismiss(animated: true, completion: nil)
+    }
+    
+        
         }
     
