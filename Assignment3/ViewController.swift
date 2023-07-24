@@ -132,18 +132,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         task.resume()
     }
     @IBAction func addButtonTapped(_ sender: Any) {
-    
-        
-        if let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController {
-            // Set the delegate and imageCollection properties before presenting the SecondViewController
-            secondVC.delegate = self
-            secondVC.imageCollection = imageCollection
-            
-            // Additional print statements for debugging
-            print("Presenting SecondViewController")
-            present(secondVC, animated: true, completion: nil)
-
-        }
+            if let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController {
+                // Set the delegate and imageCollection properties before presenting the SecondViewController
+                secondVC.delegate = self
+                secondVC.imageCollection = imageCollection
+                
+                // Additional print statements for debugging
+                print("Presenting SecondViewController")
+                present(secondVC, animated: true, completion: nil)
+            }
     }
     
 }
