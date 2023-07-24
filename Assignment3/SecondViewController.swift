@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  Assignment3
 //
 //  Created by user225115 on 7/23/23.
